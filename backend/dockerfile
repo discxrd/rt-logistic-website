@@ -1,0 +1,18 @@
+# === Runtime Stage ===
+FROM node:20-alpine
+
+# Создаём рабочую директорию
+WORKDIR /app
+
+# Копируем package.json и устанавливаем зависимости
+COPY package*.json ./
+RUN npm install
+
+# Копируем исходники
+COPY . .
+
+# Открываем порт
+EXPOSE 3001
+
+# Стартуем сервер
+CMD ["node", "app.js"]

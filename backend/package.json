@@ -1,0 +1,15 @@
+{
+  "name": "rt-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "~4.16.1",
+    "nodemailer": "^7.0.5"
+  }
+}
